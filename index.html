@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span>
+            <h1>CRUD NI FORT, ALANGAN!</h1>
+        </span>
+
+        <div class="appContainer">
+            <div class="postCreate">
+                <form id="form">
+                    <textarea name="post" id="input" placeholder="Message..."></textarea>
+                    <button type="submit" id="button">Post</button>
+                    <span id="errorText">Post cannot be blank!</span>
+                </form>
+            </div>
+
+            <div class="postFeed">
+                <h3>Feed</h3>
+                <div id="posts"></div>
+                <div id="clearAll" onClick="clearAll()">
+                    <i class="fas fa-trash-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
